@@ -86,7 +86,7 @@ def part_2(use_sample):
             if len(list(filter(lambda x: x == 0, counts_to_first_z))) == 0:
                 print(counts_to_first_z)
                 z = reduce(lambda x, y: x * y, counts_to_first_z)
-                print(z * len(path), locs)
+                print(z, len(path), z * (len(path) + 1), locs)
                 return
 
 if __name__ == "__main__":
